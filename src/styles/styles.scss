@@ -1,0 +1,348 @@
+$font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+$white: #fff;
+$black: #000;
+$off-white: #f2f4f5;
+
+html,
+body {
+    font-family: $font;
+    background-color: $white;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    @media(max-width: 1440px) {
+       width: 1280px;
+       min-width: 1280px;
+    }
+    @media(max-width: 1280px) {
+        width: 976px;
+        min-width: 976px;
+     }
+     @media(max-width: 976px) {
+        width: 760px;
+        min-width: 760px;
+     }
+}
+
+// Header 
+
+header {
+   height: 6.5rem;
+   width: 100%;
+   position: absolute;
+   top: 0px; 
+   z-index: 10;
+   position: fixed;
+   background: $white;
+   border-bottom: 1px solid #f7f7f7;
+   box-shadow: 0rem 0rem 0.5rem $black;
+   .inner-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.5rem; 
+      .logo {
+         a {
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            color: $black;
+            font-size: 2.2rem;
+         }
+      }
+   }
+   .navigation {
+      nav {
+         a {
+            margin: 0 3.5rem;
+            text-decoration: none;
+            letter-spacing: 1.75px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: $black;
+            &:last-child {
+               margin-right: 3rem;
+            }
+         }
+      }
+   }
+}
+
+// banner 
+
+.banner {
+   display: flex;
+   align-items: center;
+   background-color: $black;
+   position: relative;
+   height: 100vh;
+   top: 6.5rem;
+      .row {
+         position: relative;
+      .main-text {
+         text-transform: uppercase;
+         letter-spacing: 1.5rem;
+         font-weight: 700;
+         color: $white;
+         position: absolute;
+         width: 100%;
+         left: 0;
+         transform: translateY(-50%);
+         text-align: center;
+         mix-blend-mode: difference;
+         z-index: 9;
+         @media (max-width: 1440px) {
+            font-size: 4.3rem;
+            letter-spacing: 1.5rem;
+         }
+         h3{
+            font-size: 5.5rem;
+         }
+         h4{
+            font-size: 4rem;
+         }
+      }
+      .main-image {
+         width: 100%;
+         position: absolute;
+         margin: 0 auto;
+         z-index: 1;
+         top: -400px;
+         @media (max-width: 1440px){
+            width: 100%;
+         }
+      }
+   }
+   .fixed-misc {
+      position: fixed;
+      top: 50%;
+      left: 0.1rem;
+      transform: rotate(90deg);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      letter-spacing: 0.1rem;
+      color: $white;
+      mix-blend-mode: difference;
+      z-index: 9;
+   }
+  .fixed-top{
+   position: fixed;
+   top: 50%;
+   right: 40px;
+   transform: rotate(-90deg);
+   font-weight: 700;
+   font-size: 2.5rem;
+   z-index: 9;
+   mix-blend-mode: difference;
+      .arrow{
+         text-decoration: none;
+         color:$white;
+      }
+  }
+}
+
+// about 
+
+.about {
+   padding: 3rem 0;
+   background: whitesmoke;
+   position: relative;
+   z-index: 2;
+   .inner-about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .content {
+         width: 40%;
+         @media (max-width: 1440px) {
+            width: 40%
+         }
+         h3 {
+            font-weight: 700;
+            font-size: 3rem;
+            letter-spacing: 1.5px;
+            margin: 0;
+            p {
+               font-size: 1.3rem;
+               line-height: 1.5rem;
+               font-weight: 300;
+            }
+         }
+         .skills {
+            display: flex;
+         }
+      }
+      .images {
+         width: 50%;
+         position: relative;
+         z-index: 7;
+         @media (max-width: 1440px) {
+            height: 800px;
+         }
+         .top-right {
+            position: absolute;
+            width: 460px;
+            right: 0;
+            z-index: 4;
+            @media (max-width: 1440px) {
+               height: 360px;
+            }
+         }
+         .bottom-left {
+            position: absolute;
+            width: 410px;
+            bottom: 0;
+            left: 0;
+            @media (max-width: 1440px) {
+               height: 310px;
+            }
+         }
+      }
+   }
+   .black-box {
+      background: $black;
+      height: 418px;
+      width: 55%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 1;
+      transform: translateY(-50%);
+      @media (max-width: 1440px) {
+         height: 340px;
+         width: 55%;
+      }
+   }
+}
+
+// portfolio
+.portfolio {
+   .container {
+      margin-top: 3rem;
+      h3 {
+           font-weight: 700;
+           text-transform: uppercase;
+           font-size: 2em;
+           letter-spacing: 1.5px;
+           margin: 0;
+         }
+       .content {
+         margin-top: 2rem;
+         margin-bottom: 3rem;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+         grid-gap: 2rem;
+               .project {
+                  background-color: $white;
+                  margin: 0 auto;
+                  height: 15rem;
+                  width: 80%;
+                  border-bottom: 1px solid #f7f7f7;
+                  box-shadow: 0rem 0rem 0.5rem $black; 
+                  display: flex;
+                  .projectImage{
+                     width: 40%;
+                     height: 15rem;
+                     border-right: 1px solid $black;
+                     .images {
+                        margin: 1.5rem auto;
+                        width: 80%;
+                        height: 80%;
+                     }
+                  }
+                  .projectInfo{
+                     width: 60%;
+                     h4{
+                        margin: 1rem 1rem;
+                        font-size: 1.5rem;
+                     }
+                     h5{
+                        margin: 1rem 1rem;
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                     }
+                     p{
+                        padding-top: 1rem;
+                        margin: 1rem 1rem;
+                     }
+                     .external {
+                        position: relative;
+                        a {
+                           text-decoration: none;
+                           font-weight: 700;
+                           color: blue;
+                           margin: 10% 4%;
+                        }
+                        .git {
+                           margin: -5% 2%;
+                           color: $black;
+                           font-size: 3rem;
+                           position: absolute;
+                           right: 0.3rem;
+                        }
+                     }
+                  }
+               }
+     }
+   }
+}
+
+ //footer
+footer {
+   .contactType {
+     background: $black;
+     height: 5rem;
+     display: flex;
+     align-items: center;
+     .container {
+       ul {
+         display: flex;
+         justify-content: space-between;
+         padding: 0;
+         align-items: center;
+         flex-direction: row;
+         list-style-type:none;
+         h2 {
+            text-transform: uppercase;
+            color: $white;
+            font-size: 1.8rem;
+         }
+         li {
+           text-align: center;
+           margin-right: 9rem;
+           a {
+            color: $white;
+            font-size: 2.5rem;
+           }
+         }
+       }
+     }
+   }
+
+   //footer 
+
+   .footer {
+     background: $off-white;
+     height: 80px;
+     .inner {
+       padding: 0 120px;
+       height: 80px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .footNote {
+         a {
+           margin: 0 8px;
+         }
+       }
+     }
+   }
+ }

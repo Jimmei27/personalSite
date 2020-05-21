@@ -5,18 +5,28 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "gatsby": "^2.21.35",
     "gatsby-image": "^2.4.4",
     "gatsby-plugin-manifest": "^2.4.4",
     "gatsby-plugin-offline": "^3.2.2",
     "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-sass": "^2.3.1",
     "gatsby-plugin-sharp": "^2.6.3",
     "gatsby-source-filesystem": "^2.3.3",
     "gatsby-transformer-sharp": "^2.5.2",
+    "gsap": "^3.2.6",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "react-particles-js": "^3.2.1",
+    "smooth-scrollbar": "^8.5.2",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"
