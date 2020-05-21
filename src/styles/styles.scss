@@ -276,17 +276,17 @@ header {
                      .external {
                         position: relative;
                         a {
+                           margin-left: 1rem;
                            text-decoration: none;
                            font-weight: 700;
                            color: blue;
-                           margin: 10% 4%;
                         }
                         .git {
-                           margin: -5% 2%;
                            color: $black;
                            font-size: 3rem;
                            position: absolute;
                            right: 0.3rem;
+                           margin: -1rem 0.5rem;
                         }
                      }
                   }
