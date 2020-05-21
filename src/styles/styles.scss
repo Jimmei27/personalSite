@@ -14,13 +14,13 @@ body {
 }
 
 .container {
-    width: 1640px;
-    min-width: 1640px;
+    width: 1500px;
+    min-width: 1500px;
     margin: 0 auto;
-    @media(max-width: 1440px) {
-       width: 1280px;
-       min-width: 1280px;
-    }
+   //  @media(max-width: 1440px) {
+   //     width: 1280px;
+   //     min-width: 1280px;
+   //  }
     @media(max-width: 1280px) {
         width: 976px;
         min-width: 976px;
